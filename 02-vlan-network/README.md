@@ -95,6 +95,11 @@ show vlan brief
 
 ---
 
+##  Key Insight
+Devices in different VLANs cannot communicate because switches operate at Layer 2 and do not perform routing. Inter-VLAN communication requires a Layer 3 device such as a router.
+
+---
+
 ##  Next Steps
 
 Implement inter-VLAN routing using a router (Router-on-a-Stick) to allow communication between VLANs.
