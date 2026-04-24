@@ -1,0 +1,7 @@
+Device: PC0
+
+IP Address: 192.168.10.11
+Subnet Mask: 255.255.255.0
+
+Notes:
+- Connected to Switch Fa0/1

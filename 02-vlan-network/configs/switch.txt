@@ -1,0 +1,27 @@
+enable
+configure terminal
+
+vlan 10
+ name SALES
+
+vlan 20
+ name IT
+
+interface FastEthernet0/1
+ switchport mode access
+ switchport access vlan 10
+
+interface FastEthernet0/2
+ switchport mode access
+ switchport access vlan 10
+
+interface FastEthernet0/3
+ switchport mode access
+ switchport access vlan 20
+
+interface FastEthernet0/4
+ switchport mode access
+ switchport access vlan 20
+
+10   Sales                            active    Fa0/1, Fa0/2
+20   IT                               active    Fa0/3, Fa0/4
