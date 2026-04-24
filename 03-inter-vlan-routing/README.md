@@ -94,3 +94,19 @@ VLANs separate networks, while routers enable communication between them.
 ##  Outcome
 
 This project demonstrates how enterprise networks use VLAN segmentation combined with routing to control and manage traffic efficiently.
+
+##  Troubleshooting & Lessons Learned
+
+During this project, several issues were encountered and resolved:
+
+- Incorrect default gateway configuration on PCs
+- Trunk port misconfiguration (access vs trunk)
+- Router subinterface missing for VLAN 20
+- Incorrect interface connection (used Fa0/1 instead of trunk port)
+
+These issues were resolved through step-by-step debugging using:
+- show vlan brief
+- show interfaces trunk
+- show ip interface brief
+
+This reinforced the importance of verifying each layer of the network.
