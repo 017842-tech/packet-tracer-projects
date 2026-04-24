@@ -23,7 +23,7 @@ The network consists of:
 * 2 PCs
 * Copper Straight-Through connections
 
-![Topology](./screenshots/topology.png)
+![Topology](screenshots/topology.png)
 
 ---
 
@@ -51,7 +51,7 @@ PC0 → ping 192.168.1.11
 Result:
 Reply received successfully.
 
-![Ping Test](./screenshots/ping.png)
+![Ping Test](screenshots/ping.png)
 
 ---
 
