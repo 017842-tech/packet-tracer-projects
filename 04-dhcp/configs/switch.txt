@@ -1,0 +1,32 @@
+enable
+configure terminal
+
+! Create VLANs
+vlan 10
+ name SALES
+
+vlan 20
+ name IT
+
+! Assign access ports to VLANs
+interface fa0/1
+ switchport mode access
+ switchport access vlan 10
+
+interface fa0/2
+ switchport mode access
+ switchport access vlan 10
+
+interface fa0/3
+ switchport mode access
+ switchport access vlan 20
+
+interface fa0/4
+ switchport mode access
+ switchport access vlan 20
+
+! Configure trunk port to router
+interface fa0/24
+ switchport mode trunk
+
+end
