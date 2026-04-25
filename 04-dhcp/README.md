@@ -74,6 +74,23 @@ DHCP simplifies network configuration by automating IP assignment while still re
 
 ---
 
+##  Troubleshooting & Lessons Learned
+
+During this project, several issues were encountered:
+
+- VLAN 10 initially did not receive DHCP addresses
+- Required verification of DHCP pools per VLAN
+- Needed to renew DHCP requests on client devices
+
+These issues were resolved using:
+- show ip dhcp binding
+- show running-config | section dhcp
+- ipconfig /renew
+
+This reinforced that DHCP operates per subnet and depends on proper VLAN and routing configuration.
+
+---
+
 ##  Outcome
 
 This project demonstrates how enterprise networks automate device configuration using DHCP while maintaining segmented and routed network design.
